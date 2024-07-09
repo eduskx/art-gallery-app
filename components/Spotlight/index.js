@@ -10,8 +10,6 @@ export default function Spotlight({ image, title, artist }) {
       <p>{artist}</p> */}
 
       <ArtPiecePreview image={image} title={title} artist={artist} />
-
-      <hr></hr>
     </>
   );
 }
