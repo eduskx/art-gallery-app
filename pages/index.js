@@ -1,4 +1,3 @@
-import ArtPieces from "@/components/ArtPieces";
 import Spotlight from "@/components/Spotlight";
 
 export default function SpotlightPage({ pieces }) {
@@ -13,6 +12,7 @@ export default function SpotlightPage({ pieces }) {
         image={randomPiece.imageSource}
         title={randomPiece.name}
         artist={randomPiece.artist}
+        slug={randomPiece.slug}
       />
     </div>
   );

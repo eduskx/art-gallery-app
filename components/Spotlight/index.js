@@ -1,7 +1,7 @@
 import Image from "next/image";
 import ArtPiecePreview from "../ArtPiecePreview";
 
-export default function Spotlight({ image, title, artist }) {
+export default function Spotlight({ image, title, artist, slug }) {
   return (
     <>
       <h1>* Spotlight Piece *</h1>
@@ -9,7 +9,12 @@ export default function Spotlight({ image, title, artist }) {
       {/* <Image src={image} alt={title} width={500} height={500} priority />
       <p>{artist}</p> */}
 
-      <ArtPiecePreview image={image} title={title} artist={artist} />
+      <ArtPiecePreview
+        image={image}
+        title={title}
+        artist={artist}
+        slug={slug}
+      />
     </>
   );
 }
